@@ -1,0 +1,51 @@
+.section {
+    background: var(--white);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--bg-main);
+    box-shadow: var(--shadow-soft);
+}
+
+.imageWrapper {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background: #e2e8f0;
+}
+
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.details {
+    padding: 1.5rem;
+}
+
+.details h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.details p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}

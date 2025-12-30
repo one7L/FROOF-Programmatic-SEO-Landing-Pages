@@ -1,0 +1,107 @@
+.section {
+    background-color: var(--white);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 4rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    text-align: left;
+}
+
+.table th {
+    background: var(--froof-secondary);
+    color: var(--white);
+    padding: 1.25rem 1.5rem;
+    font-weight: 600;
+}
+
+.table td {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.tierContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.tier {
+    padding: 2.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.featured {
+    border: 2px solid var(--froof-primary);
+    background: rgba(var(--froof-primary-rgb), 0.02);
+    position: relative;
+}
+
+.tierBadge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--froof-primary);
+    color: var(--white);
+    padding: 4px 16px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: var(--froof-primary);
+}
+
+.monthly {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--froof-secondary);
+}
+
+.financing {
+    background: var(--froof-secondary);
+    color: var(--white);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    text-align: center;
+}
+
+.financing h3 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.financing p {
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.8);
+}

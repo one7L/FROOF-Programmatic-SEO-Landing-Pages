@@ -1,0 +1,25 @@
+.section {
+    background: var(--froof-secondary);
+    color: var(--white);
+    text-align: center;
+}
+
+.title {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+.subtitle {
+    margin-bottom: 2.5rem;
+    opacity: 0.8;
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:global(.btn-large) {
+    padding: 1rem 3rem !important;
+    font-size: 1.2rem !important;
+}

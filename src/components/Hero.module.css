@@ -1,0 +1,65 @@
+.hero {
+    position: relative;
+    padding: 8rem 0;
+    background-color: var(--froof-secondary);
+    background-image: linear-gradient(rgba(3, 4, 94, 0.7), rgba(3, 4, 94, 0.7)), url('/images/roof-texture.webp');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    overflow: hidden;
+}
+
+.content {
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(var(--froof-primary-rgb), 0.2);
+    border: 1px solid rgba(var(--froof-primary-rgb), 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #90e0ef;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+}
+
+.ctaGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.trustSignals {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 768px) {
+    .ctaGroup {
+        flex-direction: row;
+        align-items: center;
+    }
+}
